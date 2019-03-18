@@ -1,0 +1,73 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">
+        TimeStamp Microservice
+      </h1>
+    </header>
+    <main>
+      <h3>
+        How to fecth:
+      </h3>
+      <ol>
+        <li>
+          Make an request to: <code>https://time-microservice-api.glitch.me/api/timestamp/:date_string</code>. Replace <code>':date_string'</code> with your desired string.
+        </li>
+        <li>
+          If you just want to get the current time, you can make your request to: <code>https://time-microservice-api.glitch.me/api/timestamp</code>.
+        </li>
+        <li>
+          Remember to use a valid format string, for example: <code>2018-01-01</code>, <code>1514764800</code> 
+        </li>
+      </ol>
+      <div class="text-center">
+        <h3>
+          Example Usage:
+        </h3> 
+          <p>
+            <a href="/api/timestamp/2015-01-01">https://time-microservice-api.glitch.me/api/timestamp/2018-01-01</a>  
+          </p>
+          <p>
+            <a class="text-center" href="api/timestamp/1514764800000">https://time-microservice-api.glitch.me/api/timestamp/1514764800</a>
+          </p>
+        <h3>
+          Example Output:
+        </h3>
+        <p>
+          <code id="output">Requesting...</code>
+        </p>
+        <p>
+          <code id="output2">Requesting...</code>
+        </p>
+      </div>
+    </main>
+    <footer>
+      By: <a href="https://angelcabrera.github.io">Ángel Cabrera</a>
+    </footer>
+    <script src="/client.js" defer></script>
+  </body>
+</html>
